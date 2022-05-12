@@ -22,18 +22,18 @@ public class Facebook {
 		driver.findElement(By.name("firstname")).sendKeys("mathavan");
 		driver.findElement(By.name("lastname")).sendKeys("m");
 		driver.findElement(By.name("reg_email__")).sendKeys("mathavan10814@gmail.com");
-		driver.findElement(By.name("reg_passwd__")).sendKeys("maddy555");
+		driver.findElement(By.name("reg_passwd__")).sendKeys("kety55");
 		WebElement findElement= driver.findElement(By.id("day"));
 		Select day=new Select (findElement);
-		day.selectByValue("5");
+		day.selectByValue("13");
 		WebElement findElement1= driver.findElement(By.id("month"));
 		Select month=new Select(findElement1);
-		month.selectByValue("11");
+		month.selectByVisibleText("Apr");
 		WebElement findElement2= driver.findElement(By.id("year"));
 		Select year=new Select(findElement2);
-		year.selectByValue("1999");
-		driver.findElement(By.xpath("//input[@name='sex']")).click();
-		
+		year.selectByValue("2003");
+		driver.findElement(By.xpath("(//input[@name='sex'])[2]")).click();
+		driver.close();
 		
 		 
 		 
